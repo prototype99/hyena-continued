@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[XND] Nocturnal Animals (Continued)</li>
+        </mods>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="SpottedHyena"]</xpath>
+            <value>
+                <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                    <bodyClock>Nocturnal</bodyClock>
+                </li>
+            </value>
+        </match>
+    </Operation>
+
+<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[XND] Nocturnal Animals (Continued)</li>
+        </mods>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="StripedHyena"]</xpath>
+            <value>
+                <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                    <bodyClock>Nocturnal</bodyClock>
+                </li>
+            </value>
+        </match>
+    </Operation>
+
+
+</Patch>

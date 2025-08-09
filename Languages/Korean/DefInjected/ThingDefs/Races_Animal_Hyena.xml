@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+
+  <SpottedHyena.label>점박이 하이에나</SpottedHyena.label>
+  <SpottedHyena.description>중형 크기의, 무리지어 다니는 점박이 하이에나입니다. 악력이 매우 강합니다.</SpottedHyena.description>
+  <SpottedHyena_Meat.Label>점박이 하이에나 고기</SpottedHyena_Meat.Label>
+  <SpottedHyena_Corpse.label>점박이 하이에나의 시체</SpottedHyena_Corpse.label>
+  <SpottedHyena_Corpse.description>점박이 하이에나의 시체입니다.</SpottedHyena_Corpse.description>
+  <SpottedHyena.tools.0.label>왼 발톱</SpottedHyena.tools.0.label>
+  <SpottedHyena.tools.1.label>오른 발톱</SpottedHyena.tools.1.label>
+  <SpottedHyena.tools.3.label>머리</SpottedHyena.tools.3.label>  
+  
+  <StripedHyena.label>줄무늬 하이에나</StripedHyena.label>
+  <StripedHyena.description>중형 크기의, 작은 무리를 짓는 줄무늬 하이에나입니다.</StripedHyena.description>
+  <StripedHyena_Meat.Label>줄무늬 하이에나 고기</StripedHyena_Meat.Label>
+  <StripedHyena_Corpse.label>줄무늬 하이에나의 시체</StripedHyena_Corpse.label>
+  <StripedHyena_Corpse.description>줄무늬 하이에나의 시체입니다.</StripedHyena_Corpse.description>
+  <StripedHyena.tools.0.label>왼 발톱</StripedHyena.tools.0.label>
+  <StripedHyena.tools.1.label>오른 발톱</StripedHyena.tools.1.label>
+  <StripedHyena.tools.3.label>머리</StripedHyena.tools.3.label>
+
+</LanguageData>

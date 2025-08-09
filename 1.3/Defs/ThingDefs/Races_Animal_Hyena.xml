@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--========== Spotted hyena ============-->
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>SpottedHyena</defName>
+    <label>spotted hyena</label>
+    <description>A mid-sized spotted hyena that hunt in packs. Its mouth-grip strength is very powerful.</description>
+    <statBases>
+      <MoveSpeed>6.1</MoveSpeed>
+      <ComfyTemperatureMin>8</ComfyTemperatureMin>
+      <ComfyTemperatureMax>62</ComfyTemperatureMax>
+      <MarketValue>250</MarketValue>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>15</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>15</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.15</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>17</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <predator>true</predator>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHungerRate>0.25</baseHungerRate>
+      <baseHealthScale>1</baseHealthScale>
+      <foodType>CarnivoreAnimal, Kibble, OvivoreAnimal</foodType>
+      <leatherDef>Leather_Dog</leatherDef>
+      <meatLabel>Hyena meat</meatLabel>
+      <nameOnTameChance>0.65</nameOnTameChance>
+      <trainability>Advanced</trainability>
+      <wildness>0.70</wildness>
+      <nuzzleMtbHours>30</nuzzleMtbHours>
+      <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.25</manhunterOnDamageChance>
+      <gestationPeriodDays>19.5</gestationPeriodDays>
+      <wildBiomes>
+        <ExtremeDesert>0.03</ExtremeDesert>
+        <Desert>0.09</Desert>
+        <TemperateForest>0.02</TemperateForest>
+        <AridShrubland>0.16</AridShrubland>
+        <TropicalRainforest>0.04</TropicalRainforest>
+        <TropicalSwamp>0.01</TropicalSwamp>
+      </wildBiomes>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 0.3)</li>
+          <li>(2, 1.7)</li>
+          <li>(3, 0.7)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>12</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.18</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Hyena_Wounded</soundWounded>
+          <soundDeath>Pawn_Dog_Death</soundDeath>
+          <soundCall>Pawn_Hyena_Call</soundCall>
+          <soundAngry>Pawn_Hyena_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>SpottedHyena</defName>
+    <label>spotted hyena</label>
+    <race>SpottedHyena</race>
+    <combatPower>195</combatPower>
+    <ecoSystemWeight>0.75</ecoSystemWeight>
+    <wildGroupSize>
+      <min>4</min>
+      <max>7</max>
+    </wildGroupSize>
+    <lifeStages>
+      <li>
+        <label>spotted hyena puppy</label>
+        <labelPlural>spotted hyena puppies</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hyena/Hyenacub</texPath>
+          <drawSize>1.0</drawSize>
+          <shaderType>CutoutComplex</shaderType>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hyena/Hyena</texPath>
+          <drawSize>1.4</drawSize>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hyena/Hyena</texPath>
+          <drawSize>1.85</drawSize>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.1)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>1.95</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <!--========== Striped hyena ============-->
+  
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>StripedHyena</defName>
+    <label>striped hyena</label>
+    <description>A mid-sized striped hyena that hunt in packs. Its mouth-grip strength is very powerful.</description>
+    <statBases>
+      <MoveSpeed>6.1</MoveSpeed>
+      <ComfyTemperatureMin>8</ComfyTemperatureMin>
+	    <ComfyTemperatureMax>62</ComfyTemperatureMax>
+      <MarketValue>250</MarketValue>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>15</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>15</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>17</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <predator>true</predator>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHungerRate>0.25</baseHungerRate>
+      <baseHealthScale>1</baseHealthScale>
+      <foodType>CarnivoreAnimal, Kibble, OvivoreAnimal</foodType>
+      <leatherDef>Leather_Dog</leatherDef>
+	<useMeatFrom>SpottedHyena</useMeatFrom>
+      <nameOnTameChance>0.65</nameOnTameChance>
+      <trainability>Advanced</trainability>
+      <wildness>0.75</wildness>      
+      <nuzzleMtbHours>30</nuzzleMtbHours>
+      <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.25</manhunterOnDamageChance>
+      <gestationPeriodDays>19.5</gestationPeriodDays>
+      <wildBiomes>
+        <ExtremeDesert>0.03</ExtremeDesert>
+        <Desert>0.09</Desert>
+        <TemperateForest>0.02</TemperateForest>
+        <AridShrubland>0.16</AridShrubland>
+      </wildBiomes>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 0.3)</li>
+          <li>(2, 1.7)</li>
+          <li>(3, 0.7)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>12</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.18</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Hyena_Wounded</soundWounded>
+          <soundDeath>Pawn_Dog_Death</soundDeath>
+          <soundCall>Pawn_Hyena_Call</soundCall>
+          <soundAngry>Pawn_Hyena_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>StripedHyena</defName>
+    <label>striped hyena</label>
+    <race>StripedHyena</race>
+    <combatPower>195</combatPower>
+    <ecoSystemWeight>0.75</ecoSystemWeight>
+    <wildGroupSize>
+      <min>2</min>
+      <max>4</max>
+    </wildGroupSize>
+    <lifeStages>
+      <li>
+        <label>striped hyena puppy</label>
+        <labelPlural>striped hyena puppies</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hyena/Hyenacub</texPath>
+          <drawSize>1.0</drawSize>
+          <shaderType>CutoutComplex</shaderType>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hyena/SHyena</texPath>
+          <drawSize>1.4</drawSize>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hyena/SHyena</texPath>
+          <drawSize>1.85</drawSize>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.1)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>1.95</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>
+

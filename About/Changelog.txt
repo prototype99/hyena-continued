@@ -1,0 +1,15 @@
+1.0.0 - 3/13/2022 - updated from 1.2 to 1.3
+
+1.0.1 - 10/5/2022 - updated to 1.4
+
+1.0.2 - 2/15/2023 - added compatibility for [XND] Nocturnal Animals (Continued)
+
+1.0.3 - 3/14/2024 - updated to 1.5
+
+1.0.4 - 5/8/2024 - removed version from preview image, added mod icon
+
+1.0.5 - 5/8/2024 - will now patch out Hyena from Vanilla Expanded and HC Animal Continued
+
+1.0.6 - 4/10/2025 - updated to 1.6
+
+

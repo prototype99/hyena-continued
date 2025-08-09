@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <SpottedHyena.label>점박이 하이에나</SpottedHyena.label>
+  <SpottedHyena.lifeStages.0.label>새끼 점박이 하이에나</SpottedHyena.lifeStages.0.label>
+  <SpottedHyena.lifeStages.1.label>어린 점박이 하이에나</SpottedHyena.lifeStages.1.label>
+  <SpottedHyena.lifeStages.2.label>점박이 하이에나</SpottedHyena.lifeStages.2.label>
+  <StripedHyena.label>줄무늬 하이에나</StripedHyena.label>
+  <StripedHyena.lifeStages.0.label>새끼 줄무늬 하이에나</StripedHyena.lifeStages.0.label>
+  <StripedHyena.lifeStages.1.label>어린 줄무늬 하이에나</StripedHyena.lifeStages.1.label>
+  <StripedHyena.lifeStages.2.label>줄무늬 하이에나</StripedHyena.lifeStages.2.label>
+
+</LanguageData>

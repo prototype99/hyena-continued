@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Hyena (Continued)</name>
+  <author>Zaljerem</author>
+<packageId>zal.hyena</packageId>
+<supportedVersions>	
+	<li>1.3</li>
+	<li>1.4</li>
+	<li>1.5</li>
+	<li>1.6</li>
+</supportedVersions>
+<modVersion IgnoreIfNoMatchingField="True">1.0.6</modVersion>
+<modDependencies/>
+<loadAfter>
+		<li>VanillaExpanded.VAED</li>
+		<li>Mlie.XNDNocturnalAnimals</li>
+		<li>VanillaExpanded.VanillaAnimalsExpanded</li>
+		<li>HC.Animal.continued</li>
+	</loadAfter>
+<description>
+Original mod by Coalcat
+https://steamcommunity.com/sharedfiles/filedetails/?id=1544321935
+
+Continued by shakeyourbunny
+https://steamcommunity.com/sharedfiles/filedetails/?id=2255067914
+
+If the original author requests it, I will remove this update.
+
+--
+
+Added "A Dog Said" patch, and both Hyenas now use the same meat. 
+
+[1.3 only] If you run Vanilla Animals Expanded - Desert, its Hyena is patched to use the same meat as the two from this mod.
+
+[1.4/1.5] If you run Vanilla Animals Expanded and/or HC Animals Continued, their hyenas are removed.
+
+If you run [XND] Nocturnal Animals (Continued), Hyenas are nocturnal.
+
+--
+
+Original mod notes (1.2):
+
+Adds hyena, Make you feel uncomfortable and Heck up your base with PACKS. HA!
+They are living in desert, arid, and jungle biomes. can appears in temperature forest!
+And Watch out their Mouth, Their mouth-grip strength is very powerful. YEET!
+    
+STRIPE HYENA ADDED!    
+
+Korean Translation included.
+</description>
+</ModMetaData>
