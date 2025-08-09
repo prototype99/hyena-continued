@@ -4,23 +4,16 @@
 		<mods>
 			<li>HC Animal Continued</li>
 		</mods>
-
 		<match Class="PatchOperationSequence">
 			<operations>
-
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName = "HC_Hyena"]</xpath>					
+					<xpath>/Defs/ThingDef[defName = "HC_Hyena"]</xpath>
 				</li>
-
-			
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/PawnKindDef[defName = "HC_Hyena"]</xpath>					
+					<xpath>/Defs/PawnKindDef[defName = "HC_Hyena"]</xpath>
 				</li>
-
 		</operations>
 		</match>
 	</Operation>
-
-
 </Patch>
 
